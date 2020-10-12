@@ -4,7 +4,7 @@
 * tracking detected people
 * counting in/out of people
 
-![](https://i.imgur.com/Kf7SVpr.gif)
+![](https://github.com/hungpowang/YOLOv4_MOT_TensorRT/blob/main/TRT_demo_480.gif)
 
 ### People detection
 * using YOLOv4-tiny as object detection model
