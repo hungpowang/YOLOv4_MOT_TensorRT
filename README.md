@@ -4,11 +4,7 @@
 * tracking detected people
 * counting in/out of people
 
-<div align="center">
-    <img src="https://i.imgur.com/Kf7SVpr.gif", width="480">
-</div>
-
-[]!(https://i.imgur.com/Kf7SVpr.gif)
+![](https://i.imgur.com/Kf7SVpr.gif)
 
 ### People detection
 * using YOLOv4-tiny as object detection model
