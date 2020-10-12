@@ -4,6 +4,10 @@
 * tracking detected people
 * counting in/out of people
 
+<p align="center">
+    <img src="https://i.imgur.com/Kf7SVpr.gifv", width="480">
+</p>
+
 ### People detection
 * using YOLOv4-tiny as object detection model
 * model is trained in Darknet framework and converted to TensorRT inference engine with 608 x 608 input size
