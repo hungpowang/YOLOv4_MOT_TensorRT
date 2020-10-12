@@ -5,7 +5,7 @@
 * counting in/out of people
 
 <div align="center">
-    <img src="https://i.imgur.com/Kf7SVpr.gifv", width="480">
+    <img src="https://i.imgur.com/Kf7SVpr.gif", width="480">
 </div>
 
 ### People detection
