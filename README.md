@@ -8,7 +8,7 @@
     <img src="https://i.imgur.com/Kf7SVpr.gif", width="480">
 </div>
 
-[]!(https://i.imgur.com/Kf7SVpr.gifv)
+[]!(https://i.imgur.com/Kf7SVpr.gif)
 
 ### People detection
 * using YOLOv4-tiny as object detection model
