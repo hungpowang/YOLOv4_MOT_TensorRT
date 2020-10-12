@@ -8,6 +8,8 @@
     <img src="https://i.imgur.com/Kf7SVpr.gif", width="480">
 </div>
 
+[]!(https://i.imgur.com/Kf7SVpr.gifv)
+
 ### People detection
 * using YOLOv4-tiny as object detection model
 * model is trained in Darknet framework and converted to TensorRT inference engine with 608 x 608 input size
