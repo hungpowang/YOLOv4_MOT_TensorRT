@@ -13,7 +13,7 @@
 ### Prepare to run
 * a video with people
 * modify the main.py: replace 'crowd.mp4' by your video
-* modify the main.py: *point_1_y* and *point_2_y* to define a line to represent the boundary for in/out counting 
+* modify the main.py: **point_1_y** and **point_2_y** to define a line to represent the boundary for in/out counting 
 * download the engine file: 'yolov4_tiny_608.engine'
 
 ### Run python
