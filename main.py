@@ -32,8 +32,8 @@ TRT_LOGGER = trt.Logger()
 # ---------------------------
 # for saving video
 # ---------------------------
-fourcc = cv2.VideoWriter_fourcc(*'XVID')
-out = cv2.VideoWriter('output.avi', fourcc, 20.0, (1280, 720))
+# fourcc = cv2.VideoWriter_fourcc(*'XVID')
+# out = cv2.VideoWriter('output.avi', fourcc, 20.0, (1280, 720))
 
 
 def get_engine(engine_path):
@@ -139,7 +139,7 @@ def detect(context, buffers, image_src, image_size, num_classes):
 p_in = 0
 p_out = 0
 frame_count = 0
-frame0_flag = 0  # 代表目前為最初始狀態，從frame_0開始
+frame0_flag = 0  # stands for status of the first frame
 with get_engine(engine_path) as engine, engine.create_execution_context() as context:
     buffers = allocate_buffers(engine, 1)
     # image_size = (416, 416)
@@ -205,7 +205,7 @@ with get_engine(engine_path) as engine, engine.create_execution_context() as con
             print(item['q'])
 
         start_drawing = time.time()
-        # 標上bounding box
+        # annotate bounding box
         for box in bboxes:
             x1 = box[0]
             y1 = box[1]
@@ -215,7 +215,7 @@ with get_engine(engine_path) as engine, engine.create_execution_context() as con
             cv2.rectangle(frame, (x1, y1), (x2, y2), (255, 0, 0), 2)
             cv2.putText(frame, label, (x1, y1 - 10), cv2.FONT_HERSHEY_SIMPLEX, 0.5, (255, 0, 0), 2)
 
-        # 標上ID
+        # annotate ID
         for item in new:
             # Draw tracking IDs
             text = "ID={}, C={}" .format(item['id'], round(item['confidence'], 1))
@@ -235,5 +235,5 @@ with get_engine(engine_path) as engine, engine.create_execution_context() as con
         # ---------------------------
         # for saving video
         # ---------------------------
-        out.write(frame)
+        # out.write(frame)
 
